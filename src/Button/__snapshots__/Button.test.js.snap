@@ -1,56 +1,70 @@
-exports[`test renders colors correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders colors correctly 1`] = `
 <div>
   <Button
     btn=""
-    className="margin:7">
+    className="margin:7"
+  >
     <button
       className="margin:7"
-      data-btn="">
+      data-btn=""
+    >
        Done 
     </button>
   </Button>
   <Button
     btn="action"
-    className="margin:7">
+    className="margin:7"
+  >
     <button
       className="margin:7"
-      data-btn="action">
+      data-btn="action"
+    >
        Done 
     </button>
   </Button>
   <Button
     btn="warning"
-    className="margin:7">
+    className="margin:7"
+  >
     <button
       className="margin:7"
-      data-btn="warning">
+      data-btn="warning"
+    >
        Done 
     </button>
   </Button>
   <Button
     btn="critical"
-    className="margin:7">
+    className="margin:7"
+  >
     <button
       className="margin:7"
-      data-btn="critical">
+      data-btn="critical"
+    >
        Done 
     </button>
   </Button>
   <Button
     btn="positive"
-    className="margin:7">
+    className="margin:7"
+  >
     <button
       className="margin:7"
-      data-btn="positive">
+      data-btn="positive"
+    >
        Done 
     </button>
   </Button>
   <Button
     btn="negative"
-    className="margin:7">
+    className="margin:7"
+  >
     <button
       className="margin:7"
-      data-btn="negative">
+      data-btn="negative"
+    >
        Done 
     </button>
   </Button>
