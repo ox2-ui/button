@@ -3,17 +3,13 @@ import { storiesOf, action } from '@kadira/storybook';
 import Button from './Button';
 
 storiesOf('Button', module)
-  .add('default', () => (
-    <Button>Done</Button>
-  ))
-  .add('raised', () => (
-    <Button btn="raised">Done</Button>
-  ))
+  .add('default', () => <Button>Done</Button>)
+  .add('raised', () => <Button btn="raised">Done</Button>)
   .add('action', () => (
-    <Button btn="raised" onClick={ action('button clicked') }>Done</Button>
+    <Button btn="raised" onClick={action('button clicked')}>Done</Button>
   ))
   .add('raised small action sharp', () => (
-    <Button btn="raised small action sharp" > Done </Button>
+    <Button btn="raised small action sharp"> Done </Button>
   ))
   .add('all sizes', () => (
     <div>
@@ -58,11 +54,9 @@ storiesOf('Button', module)
       <Button btn="brand" className="margin:7"> Done </Button>
     </div>
   ))
-  .add('outline', () => (
-    <Button btn="outline">Done</Button>
-  ))
+  .add('outline', () => <Button btn="outline">Done</Button>)
   .add('outline raised small action sharp', () => (
-    <Button btn="outline raised small action sharp" > Done </Button>
+    <Button btn="outline raised small action sharp"> Done </Button>
   ))
   .add('outline all sizes', () => (
     <div>

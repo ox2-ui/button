@@ -19,6 +19,6 @@ setOptions({
   name: 'button',
 });
 
-DynamicThemeLoader({theme});
+DynamicThemeLoader({ theme });
 
 configure(loadStories, module);

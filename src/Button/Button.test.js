@@ -14,7 +14,7 @@ it('renders colors correctly', () => {
       <Button btn="critical" className="margin:7"> Done </Button>
       <Button btn="positive" className="margin:7"> Done </Button>
       <Button btn="negative" className="margin:7"> Done </Button>
-    </div>
+    </div>,
   );
 
   expect(wrapper).toMatchSnapshot();

@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 /**
  * Button Component
  */
-const Button = (props) => {
+const Button = props => {
   const { className, style, children, onClick, btn, ...other } = props;
 
   return (
