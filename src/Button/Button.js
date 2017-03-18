@@ -3,21 +3,17 @@ import React, { PropTypes } from 'react';
 /**
  * Button Component
  */
-const Button = props => {
-  const { className, style, children, onClick, btn, ...other } = props;
-
-  return (
-    <button
-      onClick={onClick}
-      className={className}
-      style={style}
-      data-btn={btn || ''}
-      {...other}
-    >
-      {children}
-    </button>
-  );
-};
+const Button = ({ btn, children, className, onClick, style, ...other }) => (
+  <button
+    className={className}
+    data-btn={btn || ''}
+    onClick={onClick}
+    style={style}
+    {...other}
+  >
+    {children}
+  </button>
+);
 
 Button.propTypes = {
   /**
