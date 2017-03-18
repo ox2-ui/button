@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
-    "@kadira/storybook-addon-options": "^1.0.1",
+    "@kadira/storybook-addon-options": "^1.0.2",
     "@ox2/button-css": "^1.0.0",
     "@ox2/css-font-roboto": "^1.0.0",
     "@ox2/css-font-roboto-condensed": "^3.0.0",
@@ -59,7 +59,7 @@
     "react-dom": "^15.4.2",
     "react-styleguidist": "^4.6.2",
     "react-test-renderer": "^15.4.2",
-    "rimraf": "^2.5.3"
+    "rimraf": "^2.6.1"
   },
   "main": "./index.js",
   "engines": {
