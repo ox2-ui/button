@@ -1,7 +1,8 @@
-# button
-![NPM version](https://img.shields.io/npm/v/@ox2/button.svg?style=flat)
+# @ox2/button
+![NPM version](https://img.shields.io/badge/npm-private-orange.svg?style=flat)
+<!-- ![NPM version](https://img.shields.io/npm/v/@ox2/button.svg?style=flat) -->
 
-Button component with a twist 🙃 
+Button component with a twist 🙃
 
 Made to be used with [button-css](https://github.com/ox2/button) packacke.
 
@@ -13,6 +14,14 @@ npm install @ox2/button --save
 Install using [yarn](http://yarnpkg.com):
 ```
 yarn add @ox2/button
+```
+
+## Usage
+```js
+import Button from '@ox2/button/Button';
+
+<Button btn="action small raised">Done</Button>
+
 ```
 
 ## Change Log
