@@ -1,103 +1,743 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import Button from './Button';
 
+const handler = () => console.log('👻'); // eslint-disable-line no-console
+
 storiesOf('Button', module)
-  .add('default', () => <Button>Done</Button>)
-  .add('raised', () => <Button btn="raised">Done</Button>)
-  .add('action', () => (
-    <Button btn="raised" onClick={action('button clicked')}>Done</Button>
+  .addDecorator(getStory => (
+    <div className="margin:7">
+      {getStory()}
+    </div>
+  ))
+  .add('all', () => (
+    <div>
+      <div>
+        <Button
+          btn="raised"
+          className="margin:7"
+          onClick={handler}
+        >
+          raised
+        </Button>
+        <Button
+          btn="raised small action sharp"
+          className="margin:7"
+          onClick={handler}
+        >
+          mixed
+        </Button>
+        <Button
+          btn="outline small warning rounded"
+          className="margin:7"
+        >
+          mixed
+        </Button>
+        <Button
+          btn="small critical pill"
+          className="margin:7"
+        >
+          mixed
+        </Button>
+      </div>
+      <div>
+        <Button
+          btn="tiny"
+          className="margin:7"
+          onClick={handler}
+        >
+          tiny
+        </Button>
+        <Button
+          btn="small"
+          className="margin:7"
+          onClick={handler}
+        >
+          small
+        </Button>
+        <Button
+          btn=""
+          className="margin:7"
+          onClick={handler}
+        >
+          default
+        </Button>
+        <Button
+          btn="large"
+          className="margin:7"
+          onClick={handler}
+        >
+          large
+        </Button>
+        <Button
+          btn="x-large"
+          className="margin:7"
+          onClick={handler}
+        >
+          x-large
+        </Button>
+        <Button
+          btn="jumbo"
+          className="margin:7"
+          onClick={handler}
+        >
+          jumbo
+        </Button>
+      </div>
+      <div>
+        <Button
+          btn=""
+          className="margin:7"
+          onClick={handler}
+        >
+          default
+        </Button>
+        <Button
+          btn="rounded"
+          className="margin:7"
+          onClick={handler}
+        >
+          rounded
+        </Button>
+        <Button
+          btn="pill"
+          className="margin:7"
+          onClick={handler}
+        >
+          pill
+        </Button>
+        <Button
+          btn="circle"
+          className="margin:7"
+          onClick={handler}
+        >
+          C
+        </Button>
+        <Button
+          btn="sharp"
+          className="margin:7"
+          onClick={handler}
+        >
+          sharp
+        </Button>
+        <div className="h:44 margin:7">
+          <Button
+            btn="block"
+            className="margin:7"
+            onClick={handler}
+          >
+            block
+          </Button>
+        </div>
+        <div className="h:44 margin:7">
+          <Button
+            btn="block-v"
+            className="margin:7"
+            onClick={handler}
+          >
+            block-v
+          </Button>
+        </div>
+        <div className="h:44 margin:7">
+          <Button
+            btn="block-h"
+            className="margin:7"
+            onClick={handler}
+          >
+            block-h
+          </Button>
+        </div>
+      </div>
+      <div>
+        <Button
+          btn=""
+          className="margin:7"
+          onClick={handler}
+        >
+          default
+        </Button>
+        <Button
+          btn="action"
+          className="margin:7"
+          onClick={handler}
+        >
+          action
+        </Button>
+        <Button
+          btn="warning"
+          className="margin:7"
+          onClick={handler}
+        >
+          warning
+        </Button>
+        <Button
+          btn="critical"
+          className="margin:7"
+          onClick={handler}
+        >
+          critical
+        </Button>
+        <Button
+          btn="positive"
+          className="margin:7"
+          onClick={handler}
+        >
+          positive
+        </Button>
+        <Button
+          btn="negative"
+          className="margin:7"
+          onClick={handler}
+        >
+          negative
+        </Button>
+        <Button
+          btn="highlight"
+          className="margin:7"
+          onClick={handler}
+        >
+          highlight
+        </Button>
+        <Button
+          btn="brand"
+          className="margin:7"
+          onClick={handler}
+        >
+          brand
+        </Button>
+      </div>
+      <div>
+        <Button
+          btn="outline tiny"
+          className="margin:7"
+          onClick={handler}
+        >
+          tiny
+        </Button>
+        <Button
+          btn="outline small"
+          className="margin:7"
+          onClick={handler}
+        >
+          small
+        </Button>
+        <Button
+          btn="outline "
+          className="margin:7"
+          onClick={handler}
+        >
+          default
+        </Button>
+        <Button
+          btn="outline large"
+          className="margin:7"
+          onClick={handler}
+        >
+          large
+        </Button>
+        <Button
+          btn="outline x-large"
+          className="margin:7"
+          onClick={handler}
+        >
+          x-large
+        </Button>
+        <Button
+          btn="outline jumbo"
+          className="margin:7"
+          onClick={handler}
+        >
+          jumbo
+        </Button>
+      </div>
+      <div>
+        <Button
+          btn="outline"
+          className="margin:7"
+          onClick={handler}
+        >
+          default
+        </Button>
+        <Button
+          btn="outline rounded"
+          className="margin:7"
+          onClick={handler}
+        >
+          rounded
+        </Button>
+        <Button
+          btn="outline pill"
+          className="margin:7"
+          onClick={handler}
+        >
+          pill
+        </Button>
+        <Button
+          btn="outline circle"
+          className="margin:7"
+          onClick={handler}
+        >
+          C
+        </Button>
+        <Button
+          btn="outline sharp"
+          className="margin:7"
+          onClick={handler}
+        >
+          sharp
+        </Button>
+        <div className="h:44 margin:7">
+          <Button
+            btn="outline block"
+            className="margin:7"
+            onClick={handler}
+          >
+            block
+          </Button>
+        </div>
+        <div className="h:44 margin:7">
+          <Button
+            btn="outline block-v"
+            className="margin:7"
+            onClick={handler}
+          >
+            block-v
+          </Button>
+        </div>
+        <div className="h:44 margin:7">
+          <Button
+            btn="outline block-h"
+            className="margin:7"
+            onClick={handler}
+          >
+            block-h
+          </Button>
+        </div>
+      </div>
+      <div>
+        <Button
+          btn="outline"
+          className="margin:7"
+          onClick={handler}
+        >
+          default
+        </Button>
+        <Button
+          btn="outline action"
+          className="margin:7"
+          onClick={handler}
+        >
+          action
+        </Button>
+        <Button
+          btn="outline warning"
+          className="margin:7"
+          onClick={handler}
+        >
+          warning
+        </Button>
+        <Button
+          btn="outline critical"
+          className="margin:7"
+          onClick={handler}
+        >
+          critical
+        </Button>
+        <Button
+          btn="outline positive"
+          className="margin:7"
+          onClick={handler}
+        >
+          positive
+        </Button>
+        <Button
+          btn="outline negative"
+          className="margin:7"
+          onClick={handler}
+        >
+          negative
+        </Button>
+        <Button
+          btn="outline highlight"
+          className="margin:7"
+          onClick={handler}
+        >
+          highlight
+        </Button>
+        <Button
+          btn="brand"
+          className="margin:7"
+          onClick={handler}
+        >
+          brand
+        </Button>
+      </div>
+    </div>
+  ))
+  .add('default', () => (
+    <Button className="margin:7" onClick={handler}>
+      Done
+    </Button>
+  ))
+  .add('raised', () => (
+    <Button btn="raised" onClick={handler}>
+      Done
+    </Button>
   ))
   .add('raised small action sharp', () => (
-    <Button btn="raised small action sharp">Done</Button>
+    <Button
+      btn="raised small action sharp"
+      className="margin:7"
+      onClick={handler}
+    >
+      Done
+    </Button>
   ))
   .add('all sizes', () => (
     <div>
-      <Button btn="tiny" className="margin:7">Done</Button>
-      <Button btn="small" className="margin:7">Done</Button>
-      <Button btn="" className="margin:7">Done</Button>
-      <Button btn="large" className="margin:7">Done</Button>
-      <Button btn="x-large" className="margin:7">Done</Button>
-      <Button btn="jumbo" className="margin:7">Done</Button>
+      <Button
+        btn="tiny"
+        className="margin:7"
+        onClick={handler}
+      >
+        tiny
+      </Button>
+      <Button
+        btn="small"
+        className="margin:7"
+        onClick={handler}
+      >
+        small
+      </Button>
+      <Button btn="" className="margin:7" onClick={handler}>
+        default
+      </Button>
+      <Button
+        btn="large"
+        className="margin:7"
+        onClick={handler}
+      >
+        large
+      </Button>
+      <Button
+        btn="x-large"
+        className="margin:7"
+        onClick={handler}
+      >
+        x-large
+      </Button>
+      <Button
+        btn="jumbo"
+        className="margin:7"
+        onClick={handler}
+      >
+        jumbo
+      </Button>
     </div>
   ))
   .add('all shapes', () => (
     <div>
-      <Button btn="" className="margin:7">Done</Button>
-      <Button btn="rounded" className="margin:7">Done</Button>
-      <Button btn="pill" className="margin:7">Done</Button>
-      <Button btn="circle" className="margin:7"> Ok </Button>
-      <Button btn="sharp" className="margin:7">Done</Button>
+      <Button btn="" className="margin:7" onClick={handler}>
+        default
+      </Button>
+      <Button
+        btn="rounded"
+        className="margin:7"
+        onClick={handler}
+      >
+        rounded
+      </Button>
+      <Button
+        btn="pill"
+        className="margin:7"
+        onClick={handler}
+      >
+        pill
+      </Button>
+      <Button
+        btn="circle"
+        className="margin:7"
+        onClick={handler}
+      >
+        C
+      </Button>
+      <Button
+        btn="sharp"
+        className="margin:7"
+        onClick={handler}
+      >
+        sharp
+      </Button>
       <div className="h:44 margin:7">
-        <Button btn="block" className="margin:7">Done</Button>
+        <Button
+          btn="block"
+          className="margin:7"
+          onClick={handler}
+        >
+          block
+        </Button>
       </div>
       <div className="h:44 margin:7">
-        <Button btn="block-v" className="margin:7">Done</Button>
+        <Button
+          btn="block-v"
+          className="margin:7"
+          onClick={handler}
+        >
+          block-v
+        </Button>
       </div>
       <div className="h:44 margin:7">
-        <Button btn="block-h" className="margin:7">Done</Button>
+        <Button
+          btn="block-h"
+          className="margin:7"
+          onClick={handler}
+        >
+          block-h
+        </Button>
       </div>
     </div>
   ))
   .add('default colors', () => (
     <div>
-      <Button btn="" className="margin:7">Done</Button>
-      <Button btn="action" className="margin:7">Done</Button>
-      <Button btn="warning" className="margin:7">Done</Button>
-      <Button btn="critical" className="margin:7">Done</Button>
-      <Button btn="positive" className="margin:7">Done</Button>
-      <Button btn="negative" className="margin:7">Done</Button>
+      <Button btn="" className="margin:7" onClick={handler}>
+        Default
+      </Button>
+      <Button
+        btn="action"
+        className="margin:7"
+        onClick={handler}
+      >
+        action
+      </Button>
+      <Button
+        btn="warning"
+        className="margin:7"
+        onClick={handler}
+      >
+        warning
+      </Button>
+      <Button
+        btn="critical"
+        className="margin:7"
+        onClick={handler}
+      >
+        critical
+      </Button>
+      <Button
+        btn="positive"
+        className="margin:7"
+        onClick={handler}
+      >
+        positive
+      </Button>
+      <Button
+        btn="negative"
+        className="margin:7"
+        onClick={handler}
+      >
+        negative
+      </Button>
+      <Button
+        btn="highlight"
+        className="margin:7"
+        onClick={handler}
+      >
+        highlight
+      </Button>
     </div>
   ))
   .add('themed', () => (
     <div>
-      <Button btn="brand" className="margin:7">Done</Button>
+      <Button
+        btn="brand"
+        className="margin:7"
+        onClick={handler}
+      >
+        brand
+      </Button>
     </div>
   ))
-  .add('outline', () => <Button btn="outline">Done</Button>)
+  .add('outline', () => (
+    <Button btn="outline">outline</Button>
+  ))
   .add('outline raised small action sharp', () => (
-    <Button btn="outline raised small action sharp">Done</Button>
+    <Button btn="outline raised small action sharp">
+      outline
+    </Button>
   ))
   .add('outline all sizes', () => (
     <div>
-      <Button btn="outline tiny" className="margin:7">Done</Button>
-      <Button btn="outline small" className="margin:7">Done</Button>
-      <Button btn="outline " className="margin:7">Done</Button>
-      <Button btn="outline large" className="margin:7">Done</Button>
-      <Button btn="outline x-large" className="margin:7">Done</Button>
-      <Button btn="outline jumbo" className="margin:7">Done</Button>
+      <Button
+        btn="outline tiny"
+        className="margin:7"
+        onClick={handler}
+      >
+        tiny
+      </Button>
+      <Button
+        btn="outline small"
+        className="margin:7"
+        onClick={handler}
+      >
+        small
+      </Button>
+      <Button
+        btn="outline "
+        className="margin:7"
+        onClick={handler}
+      >
+        default
+      </Button>
+      <Button
+        btn="outline large"
+        className="margin:7"
+        onClick={handler}
+      >
+        large
+      </Button>
+      <Button
+        btn="outline x-large"
+        className="margin:7"
+        onClick={handler}
+      >
+        x-large
+      </Button>
+      <Button
+        btn="outline jumbo"
+        className="margin:7"
+        onClick={handler}
+      >
+        jumbo
+      </Button>
     </div>
   ))
   .add('outline all shapes', () => (
     <div>
-      <Button btn="outline" className="margin:7">Done</Button>
-      <Button btn="outline rounded" className="margin:7">Done</Button>
-      <Button btn="outline pill" className="margin:7">Done</Button>
-      <Button btn="outline circle" className="margin:7"> Ok </Button>
-      <Button btn="outline sharp" className="margin:7">Done</Button>
+      <Button
+        btn="outline"
+        className="margin:7"
+        onClick={handler}
+      >
+        default
+      </Button>
+      <Button
+        btn="outline rounded"
+        className="margin:7"
+        onClick={handler}
+      >
+        rounded
+      </Button>
+      <Button
+        btn="outline pill"
+        className="margin:7"
+        onClick={handler}
+      >
+        pill
+      </Button>
+      <Button
+        btn="outline circle"
+        className="margin:7"
+        onClick={handler}
+      >
+        C
+      </Button>
+      <Button
+        btn="outline sharp"
+        className="margin:7"
+        onClick={handler}
+      >
+        sharp
+      </Button>
       <div className="h:44 margin:7">
-        <Button btn="outline block" className="margin:7">Done</Button>
+        <Button
+          btn="outline block"
+          className="margin:7"
+          onClick={handler}
+        >
+          block
+        </Button>
       </div>
       <div className="h:44 margin:7">
-        <Button btn="outline block-v" className="margin:7">Done</Button>
+        <Button
+          btn="outline block-v"
+          className="margin:7"
+          onClick={handler}
+        >
+          block-v
+        </Button>
       </div>
       <div className="h:44 margin:7">
-        <Button btn="outline block-h" className="margin:7">Done</Button>
+        <Button
+          btn="outline block-h"
+          className="margin:7"
+          onClick={handler}
+        >
+          block-h
+        </Button>
       </div>
     </div>
   ))
   .add('outline default colors', () => (
     <div>
-      <Button btn="outline" className="margin:7">Done</Button>
-      <Button btn="outline action" className="margin:7">Done</Button>
-      <Button btn="outline warning" className="margin:7">Done</Button>
-      <Button btn="outline critical" className="margin:7">Done</Button>
-      <Button btn="outline positive" className="margin:7">Done</Button>
-      <Button btn="outline negative" className="margin:7">Done</Button>
+      <Button
+        btn="outline"
+        className="margin:7"
+        onClick={handler}
+      >
+        default
+      </Button>
+      <Button
+        btn="outline action"
+        className="margin:7"
+        onClick={handler}
+      >
+        action
+      </Button>
+      <Button
+        btn="outline warning"
+        className="margin:7"
+        onClick={handler}
+      >
+        warning
+      </Button>
+      <Button
+        btn="outline critical"
+        className="margin:7"
+        onClick={handler}
+      >
+        critical
+      </Button>
+      <Button
+        btn="outline positive"
+        className="margin:7"
+        onClick={handler}
+      >
+        positive
+      </Button>
+      <Button
+        btn="outline negative"
+        className="margin:7"
+        onClick={handler}
+      >
+        negative
+      </Button>
+      <Button
+        btn="outline highlight"
+        className="margin:7"
+        onClick={handler}
+      >
+        highlight
+      </Button>
     </div>
   ))
   .add('outline themed', () => (
     <div>
-      <Button btn="brand" className="margin:7">Done</Button>
+      <Button
+        btn="brand"
+        className="margin:7"
+        onClick={handler}
+      >
+        brand
+      </Button>
     </div>
   ));
