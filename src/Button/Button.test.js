@@ -6,7 +6,9 @@ import Button from './Button';
 const handler = () => true;
 
 it('renders colors correctly', () => {
-  const wrapper = mount(<Button btn="raised small action sharp">Done</Button>);
+  const wrapper = mount(
+    <Button btn="raised small action sharp">Done</Button>,
+  );
 
   expect(wrapper).toMatchSnapshot();
 });

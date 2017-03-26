@@ -3,7 +3,9 @@ import React, { PropTypes } from 'react';
 /**
  * Button Component
  */
-const Button = ({ btn, children, className, onClick, style, ...other }) => (
+const Button = (
+  { btn, children, className, onClick, style, ...other },
+) => (
   <button
     className={className}
     data-btn={btn || ''}
