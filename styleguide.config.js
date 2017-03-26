@@ -4,7 +4,7 @@ const glob = require('glob');
 module.exports = {
   title: '@ox2/button',
   template: './docs/src/template.html',
-  serverPort: 6007,
+  serverPort: 55064,
   styleguideDir: './docs',
   updateWebpackConfig: webpackConfig => {
     webpackConfig.module.loaders.push(
