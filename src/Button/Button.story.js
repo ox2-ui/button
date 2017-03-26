@@ -365,7 +365,7 @@ storiesOf('Button', module)
           highlight
         </Button>
         <Button
-          btn="brand"
+          btn="outline brand"
           className="margin:7"
           onClick={handler}
         >
@@ -733,7 +733,7 @@ storiesOf('Button', module)
   .add('outline themed', () => (
     <div>
       <Button
-        btn="brand"
+        btn="outline brand"
         className="margin:7"
         onClick={handler}
       >
