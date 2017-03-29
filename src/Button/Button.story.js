@@ -371,6 +371,59 @@ storiesOf('Button', module)
         >
           brand
         </Button>
+        <Button
+          btn="transparent action"
+          className="margin:7"
+          onClick={handler}
+        >
+          transparent
+        </Button>
+        <div className="color:critical padding:20 margin-y:20">
+          <Button
+            btn="dark"
+            className="margin:7"
+            onClick={handler}
+          >
+            dark
+          </Button>
+          <Button
+            btn="light"
+            className="margin:7"
+            onClick={handler}
+          >
+            light
+          </Button>
+          <Button
+            btn="light-faded"
+            className="margin:7"
+            onClick={handler}
+          >
+            light-faded
+          </Button>
+        </div>
+        <div className="color:warning padding:20">
+          <Button
+            btn="white"
+            className="margin:7 text-color:warning"
+            onClick={handler}
+          >
+            white
+          </Button>
+          <Button
+            btn="white raised"
+            className="margin:7 text-color:warning"
+            onClick={handler}
+          >
+            raised
+          </Button>
+          <Button
+            btn="white outline"
+            className="margin:7"
+            onClick={handler}
+          >
+            outline
+          </Button>
+        </div>
       </div>
     </div>
   ))
@@ -738,6 +791,66 @@ storiesOf('Button', module)
         onClick={handler}
       >
         brand
+      </Button>
+    </div>
+  )).add('transparent', () => (
+    <div>
+      <Button
+        btn="transparent action"
+        className="margin:7"
+        onClick={handler}
+      >
+        transparent
+      </Button>
+    </div>
+  ))
+  .add('overlay colors', () => (
+    <div className="color:critical padding:20">
+      <Button
+        btn="dark"
+        className="margin:7"
+        onClick={handler}
+      >
+        dark
+      </Button>
+      <Button
+        btn="light"
+        className="margin:7"
+        onClick={handler}
+      >
+        light
+      </Button>
+      <Button
+        btn="light-faded"
+        className="margin:7"
+        onClick={handler}
+      >
+        light-faded
+      </Button>
+    </div>
+  ))
+  .add('white', () => (
+    <div className="color:warning padding:20">
+      <Button
+        btn="white"
+        className="margin:7 text-color:warning"
+        onClick={handler}
+      >
+        white
+      </Button>
+      <Button
+        btn="white raised"
+        className="margin:7 text-color:warning"
+        onClick={handler}
+      >
+        raised
+      </Button>
+      <Button
+        btn="white outline"
+        className="margin:7"
+        onClick={handler}
+      >
+        outline
       </Button>
     </div>
   ));
