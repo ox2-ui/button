@@ -7,7 +7,7 @@ import DynamicThemeLoader
 import { default as theme } from '@tapfuse/theme-spark';
 import '@ox2/css-font-roboto-condensed';
 import '@ox2/css-font-roboto';
-import '@tapfuse/css-icons-linear';
+import '@ox2/css-icons-moon';
 import '@ox2/ycss';
 import '@ox2/button-css';
 

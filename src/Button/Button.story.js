@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Button from './Button';
+import FontIcon from '@ox2/icon/FontIcon';
 
 const handler = () => console.log('👻'); // eslint-disable-line no-console
 
@@ -147,6 +148,142 @@ storiesOf('Button', module)
             block-h
           </Button>
         </div>
+      </div>
+      <div>
+        <Button
+          btn="circle tiny"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="circle small"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="circle"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="circle large"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="circle x-large"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="circle jumbo"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+      </div>
+      <div>
+        <Button
+          btn="square tiny"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="square small"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="square"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="square large"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="square x-large"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
+        <Button
+          btn="square jumbo"
+          className="margin:7"
+          onClick={handler}
+        >
+          <FontIcon
+            className="vertical-align:text-bottom text-color:white display:block"
+            group="moon"
+            icon="search3"
+          />
+        </Button>
       </div>
       <div>
         <Button
@@ -548,6 +685,146 @@ storiesOf('Button', module)
           block-h
         </Button>
       </div>
+    </div>
+  ))
+  .add('circle with icons', () => (
+    <div>
+      <Button
+        btn="circle tiny"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="circle small"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="circle"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="circle large"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="circle x-large"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="circle jumbo"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+    </div>
+  ))
+  .add('square with icons', () => (
+    <div>
+      <Button
+        btn="square tiny"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="square small"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="square"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="square large"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="square x-large"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
+      <Button
+        btn="square jumbo"
+        className="margin:7"
+        onClick={handler}
+      >
+        <FontIcon
+          className="vertical-align:text-bottom text-color:white display:block"
+          group="moon"
+          icon="search3"
+        />
+      </Button>
     </div>
   ))
   .add('default colors', () => (
