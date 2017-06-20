@@ -31,12 +31,14 @@ storiesOf('Button', module)
         <Button
           btn="outline small warning rounded"
           className="margin:7"
+          onClick={handler}
         >
           mixed
         </Button>
         <Button
           btn="small critical pill"
           className="margin:7"
+          onClick={handler}
         >
           mixed
         </Button>
