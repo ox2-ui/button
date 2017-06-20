@@ -1,17 +1,17 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import Button from './Button';
 import FontIcon from '@ox2/icon/FontIcon';
 
 const handler = () => console.log('👻'); // eslint-disable-line no-console
 
 storiesOf('Button', module)
-  .addDecorator(getStory => (
+  .addDecorator(getStory =>
     <div className="margin:7">
       {getStory()}
-    </div>
-  ))
-  .add('all', () => (
+    </div>,
+  )
+  .add('all', () =>
     <div>
       <div>
         <Button
@@ -562,28 +562,28 @@ storiesOf('Button', module)
           </Button>
         </div>
       </div>
-    </div>
-  ))
-  .add('default', () => (
+    </div>,
+  )
+  .add('default', () =>
     <Button className="margin:7" onClick={handler}>
       Done
-    </Button>
-  ))
-  .add('raised', () => (
+    </Button>,
+  )
+  .add('raised', () =>
     <Button btn="raised" onClick={handler}>
       Done
-    </Button>
-  ))
-  .add('raised small action sharp', () => (
+    </Button>,
+  )
+  .add('raised small action sharp', () =>
     <Button
       btn="raised small action sharp"
       className="margin:7"
       onClick={handler}
     >
       Done
-    </Button>
-  ))
-  .add('all sizes', () => (
+    </Button>,
+  )
+  .add('all sizes', () =>
     <div>
       <Button
         btn="tiny"
@@ -623,9 +623,9 @@ storiesOf('Button', module)
       >
         jumbo
       </Button>
-    </div>
-  ))
-  .add('all shapes', () => (
+    </div>,
+  )
+  .add('all shapes', () =>
     <div>
       <Button btn="" className="margin:7" onClick={handler}>
         default
@@ -685,9 +685,9 @@ storiesOf('Button', module)
           block-h
         </Button>
       </div>
-    </div>
-  ))
-  .add('circle with icons', () => (
+    </div>,
+  )
+  .add('circle with icons', () =>
     <div>
       <Button
         btn="circle tiny"
@@ -755,9 +755,9 @@ storiesOf('Button', module)
           icon="search3"
         />
       </Button>
-    </div>
-  ))
-  .add('square with icons', () => (
+    </div>,
+  )
+  .add('square with icons', () =>
     <div>
       <Button
         btn="square tiny"
@@ -825,9 +825,9 @@ storiesOf('Button', module)
           icon="search3"
         />
       </Button>
-    </div>
-  ))
-  .add('default colors', () => (
+    </div>,
+  )
+  .add('default colors', () =>
     <div>
       <Button btn="" className="margin:7" onClick={handler}>
         Default
@@ -874,9 +874,9 @@ storiesOf('Button', module)
       >
         highlight
       </Button>
-    </div>
-  ))
-  .add('themed', () => (
+    </div>,
+  )
+  .add('themed', () =>
     <div>
       <Button
         btn="brand"
@@ -885,17 +885,17 @@ storiesOf('Button', module)
       >
         brand
       </Button>
-    </div>
-  ))
-  .add('outline', () => (
-    <Button btn="outline">outline</Button>
-  ))
-  .add('outline raised small action sharp', () => (
+    </div>,
+  )
+  .add('outline', () =>
+    <Button btn="outline">outline</Button>,
+  )
+  .add('outline raised small action sharp', () =>
     <Button btn="outline raised small action sharp">
       outline
-    </Button>
-  ))
-  .add('outline all sizes', () => (
+    </Button>,
+  )
+  .add('outline all sizes', () =>
     <div>
       <Button
         btn="outline tiny"
@@ -939,9 +939,9 @@ storiesOf('Button', module)
       >
         jumbo
       </Button>
-    </div>
-  ))
-  .add('outline all shapes', () => (
+    </div>,
+  )
+  .add('outline all shapes', () =>
     <div>
       <Button
         btn="outline"
@@ -1005,9 +1005,9 @@ storiesOf('Button', module)
           block-h
         </Button>
       </div>
-    </div>
-  ))
-  .add('outline default colors', () => (
+    </div>,
+  )
+  .add('outline default colors', () =>
     <div>
       <Button
         btn="outline"
@@ -1058,9 +1058,9 @@ storiesOf('Button', module)
       >
         highlight
       </Button>
-    </div>
-  ))
-  .add('outline themed', () => (
+    </div>,
+  )
+  .add('outline themed', () =>
     <div>
       <Button
         btn="outline brand"
@@ -1069,8 +1069,9 @@ storiesOf('Button', module)
       >
         brand
       </Button>
-    </div>
-  )).add('transparent', () => (
+    </div>,
+  )
+  .add('transparent', () =>
     <div>
       <Button
         btn="transparent action"
@@ -1079,9 +1080,9 @@ storiesOf('Button', module)
       >
         transparent
       </Button>
-    </div>
-  ))
-  .add('overlay colors', () => (
+    </div>,
+  )
+  .add('overlay colors', () =>
     <div className="color:critical padding:20">
       <Button
         btn="dark"
@@ -1104,9 +1105,9 @@ storiesOf('Button', module)
       >
         light-faded
       </Button>
-    </div>
-  ))
-  .add('white', () => (
+    </div>,
+  )
+  .add('white', () =>
     <div className="color:warning padding:20">
       <Button
         btn="white"
@@ -1129,5 +1130,5 @@ storiesOf('Button', module)
       >
         outline
       </Button>
-    </div>
-  ));
+    </div>,
+  );

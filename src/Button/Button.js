@@ -1,11 +1,17 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 /**
  * Button Component
  */
-const Button = (
-  { btn, children, className, onClick, style, ...other },
-) => (
+const Button = ({
+  btn,
+  children,
+  className,
+  onClick,
+  style,
+  ...other
+}) =>
   <button
     className={className}
     data-btn={btn || ''}
@@ -14,8 +20,13 @@ const Button = (
     {...other}
   >
     {children}
-  </button>
-);
+  </button>;
+
+Button.defaultProps = {
+  btn: '',
+  className: '',
+  style: {},
+};
 
 Button.propTypes = {
   /**
@@ -25,7 +36,7 @@ Button.propTypes = {
   /**
    * This is what will be displayed inside the button.
    */
-  children: React.PropTypes.node,
+  children: PropTypes.node.isRequired,
   /**
    * The css class name of the root element.
    */
@@ -33,7 +44,7 @@ Button.propTypes = {
   /**
    * Callback function fired when the element is clicked.
    */
-  onClick: PropTypes.func,
+  onClick: PropTypes.func.isRequired,
   /**
    * Override the inline-styles of the root element.
    */

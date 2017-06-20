@@ -8,11 +8,11 @@ Made to be used with [button-css](https://github.com/ox2/button) packacke.
 
 ## Installation
 Install using [npm](http://npmjs.com):
-```
+```sh
 npm install @ox2/button --save
 ```
 Install using [yarn](http://yarnpkg.com):
-```
+```sh
 yarn add @ox2/button
 ```
 
@@ -25,7 +25,7 @@ import Button from '@ox2/button/Button';
 ```
 
 ## Change Log
-Changes are tracked in the [CHANGELOG.md](https://github.com/ox2/button/tree/master/CHANGELOG.md)
+Changes are tracked in the [CHANGELOG.md](https://github.com/ox2/button/blob/master/CHANGELOG.md)
 
 ## License
-[MIT](https://github.com/ox2/button/tree/master/LICENSE)
+[MIT](https://github.com/ox2/button/blob/master/LICENSE)
