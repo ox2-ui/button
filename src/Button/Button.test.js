@@ -7,7 +7,12 @@ const handler = () => true;
 
 it('renders colors correctly', () => {
   const wrapper = mount(
-    <Button btn="raised small action sharp">Done</Button>,
+    <Button
+      btn="raised small action sharp"
+      onClick={handler}
+    >
+      Done
+    </Button>,
   );
 
   expect(wrapper).toMatchSnapshot();
