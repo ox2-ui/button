@@ -4,11 +4,13 @@ exports[`renders colors correctly 1`] = `
 <Button
   btn="raised small action sharp"
   className=""
+  onClick={[Function]}
   style={Object {}}
 >
   <button
     className=""
     data-btn="raised small action sharp"
+    onClick={[Function]}
     style={Object {}}
   >
     Done
